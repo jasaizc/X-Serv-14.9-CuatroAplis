@@ -14,8 +14,8 @@ class app:
 
     def process(self, parsedRequest):
         return ("200 OK", "<html><body><h1>" + \
-                    "Operaciones disponibles: " + \
-                    "</h1><p>/hola</p><p>/adios</p><p>/suma/operando1/operando2</p><p>/aleat</p></body></html>")
+                    "Opciones disponibles: " + \
+                    "</h1><p> <a href='/hola'>/hola</a></p><p><a href='/adios'>/adios</a></p><p>/suma/operando1/operando2</p><p><a href='/aleat'>/aleat</a></p></body></html>")
 
 
 
@@ -27,8 +27,8 @@ class appWeb(webapp.webApp):
 
     def process(self, parsedRequest):
         return ("200 OK", "<html><body><h1>" + \
-                    "Funciones disponibles: " + \
-                    "</h1><p>-hola</p><p>-adios</p><p>-suma/operando1/operando2</p><p>-aleat</p></body></html>")
+                    "Opciones disponibles: " + \
+                    "</h1><p> <a href='/hola'>/hola</a></p><p><a href='/adios'>/adios</a></p><p>/suma/operando1/operando2</p><p><a href='/aleat'>/aleat</a></p></body></html>")
 
     def __init__ (self, hostname, port, apps):
         """Initialize the web application."""
