@@ -25,3 +25,5 @@ pasándole como parámetro tu nombre de usuario en GitHub. Así, un ejemplo de
 ejecución sería:
 
 $ python check.py gregoriorobles
+
+Para iniciar el Servidor Ejecutamos el app.py
